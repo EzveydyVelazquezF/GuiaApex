@@ -51,7 +51,7 @@
         <header class="text-center mb-8 md:mb-12">
             <h1 class="text-3xl md:text-5xl font-bold text-slate-900">Guía Interactiva: APEX y Dashboard Dinámico</h1>
             <p class="mt-2 md:mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Una transformación de la guía estática a una experiencia interactiva para crear una aplicación en Oracle APEX con autenticación y roles.</p>
-                                    <li><a href="../index.html" class="nav-link text-left w-full p-3 rounded-lg transition-colors duration-200 block nav-link active">Regresar</a></li>
+            <a href="../index.html" class="nav-link text-left w-full p-3 rounded-lg transition-colors duration-200 block nav-link active">Regresar</a>
         </header>
 
         <div class="flex flex-col md:flex-row gap-8">
@@ -83,10 +83,6 @@
     contraseña    VARCHAR2(100) NOT NULL,
     rol           VARCHAR2(20) NOT NULL CHECK (rol IN ('administrador', 'coach', 'directivo', 'aprendiz'))
 );</code></pre>
-                    </div>
-                     <div class="mt-6 p-4 bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 rounded-r-lg">
-                        <h4 class="font-bold">Nota sobre la seguridad</h4>
-                        <p>Como se solicitó, la columna `contraseña` no utiliza hash. Para un entorno de producción, es crucial encriptar las contraseñas utilizando la función <strong>`APEX_AUTHENTICATION.HASH`</strong> para garantizar la seguridad de los datos.</p>
                     </div>
                 </div>
 
