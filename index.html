@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Creación de Dashboard - Índice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9; /* slate-100 */
+        }
+        nav {
+            background-color: #475569; /* slate-600 */
+        }
+        .nav-link {
+            color: #e2e8f0; /* slate-200 */
+            padding: 1rem 1.5rem;
+            transition: background-color 0.3s;
+        }
+        .nav-link:hover {
+            background-color: #64748b; /* slate-500 */
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <nav class="p-4 shadow-lg sticky top-0 z-50">
+        <ul class="flex justify-center space-x-2 md:space-x-8 text-sm md:text-base">
+            <li><a href="public/Guia.html" class="nav-link rounded-full">Parte 1: Creación del Dashboard</a></li>
+        
+            <li><a href="capitulo2.html" class="nav-link rounded-full">Parte 2: Reportes y Gráficos</a></li>
+            <li><a href="capitulo3.html" class="nav-link rounded-full">Parte 3: Interacción del Usuario</a></li>
+            <li><a href="capitulo4.html" class="nav-link rounded-full">Parte 4: Personalización Avanzada</a></li>
+        </ul>
+    </nav>
+
+    <main class="flex-grow container mx-auto p-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-800">Guía APEX Interactiva</h1>
+            <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">Selecciona un capítulo de la barra de navegación para comenzar tu aprendizaje sobre la creación de dashboards dinámicos en Oracle APEX.</p>
+        </header>
+
+        <section class="bg-white p-8 md:p-12 rounded-xl shadow-xl max-w-3xl mx-auto text-slate-700">
+            <h2 class="text-3xl font-bold mb-6 text-slate-900">Bienvenido</h2>
+            <p class="mb-4">Esta guía te llevará paso a paso a través del proceso de creación de una aplicación robusta en Oracle APEX. Desde la configuración de la base de datos hasta la seguridad y la visualización de datos, aprenderás todo lo necesario para construir dashboards dinámicos y funcionales.</p>
+            <p>Usa la barra de navegación en la parte superior para explorar cada capítulo. Cada sección contiene instrucciones detalladas, código reutilizable y consejos clave para ayudarte a dominar el proceso.</p>
+        </section>
+    </main>
+
+    <footer class="p-4 text-center text-sm text-slate-500">
+        © 2024 Guía de Oracle APEX. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
